@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>IW Opdracht Rogier</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Registreer</h1>
+        <p class="lead">Meld je aan bij Anoroc Services, wij beschermen jou software tegen malware!</p>
+        <div class="row">
+            <div class="col-10">
+                <form>
+                    <div class="col-md">
+                        <label for="voornaam1" class="form-label">Voornaam</label>
+                        <input type="text" class="form-control" id="voornaam1" placeholder="Uw voornaam">
+                        <div id="voornaam2" class="form-text"></div>
+                    </div>
+                    <div class="col-md">
+                        <label for="naam1" class="form-label">Naam</label>
+                        <input type="text" class="form-control" id="naam1" placeholder="Uw naam">
+                        <div id="naam2" class="form-text"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <label for="gebruikersnaam" class="form-label">Gebruikersnaam</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                <input type="text" class="form-control" id="gebruikersnaam" placeholder="u911236">
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="email1" class="form-label">E-mailadres</label>
+                            <input type="text" class="form-control" id="email1" placeholder="mail@example.be">
+                            <div id="email2" class="form-text"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <label for="wachtwoord" class="form-label">Wachtwoord</label>
+                            <input type="password" class="form-control" id="wachtwoord">
+                            <small id="passSubtext" class="form-text text-muted">Je wachtwoord moet minstens 8 tekens lang zijn.</small>
+                        </div>
+                        <div class="col-md">
+                            <label for="herhaalWachtwoord" class="form-label">Herhaal wachtwoord</label>
+                            <input type="password" class="form-control" id="herhaalWachtwoord">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <label for="adres1" class="form-label">Adres</label>
+                            <input type="text" class="form-control" id="adres1" placeholder="Uw adres en huisnummer">
+                            <div id="adres2" class="form-text"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <label for="land" class="form-label">Land</label>
+                            <select class="form-select" id="land">
+                           <option selected disabled value="">Kies een land</option>                           
+                        </select>
+                        </div>
+                        <div class="col-md">
+                            <label for="provincie" class="form-label">Provincie</label>
+                            <select class="form-select" id="provincie">
+                           <option selected disabled value="">Kies een provincie</option>
+                        </select>
+                        </div>
+                        <div class="col-md">
+                            <label for="postcode1" class="form-label">Postcode</label>
+                            <input type="number" class="form-control" id="postcode1" placeholder="Uw adres en huisnummer">
+                            <div id="postcode2" class="form-text"></div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md">
+                            <h3>Hou me op de hoogte</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="nieuwsbrief">
+                                <label class="form-check-label" for="nieuwsbrief">
+                           Inschrijven voor onze nieuwsbrief
+                           </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="voorwaarden">
+                                <label class="form-check-label" for="voorwaarden">
+                           Ik ga akkoord met de algemene voorwaarden
+                           </label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <h3>Betaling</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="betalingOpt" id="bankingApp" value="Banking App">
+                                <label class="form-check-label" for="bankingApp">
+                           Banking app
+                           </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="betalingOpt" id="overschrijving" value="Overschrijving">
+                                <label class="form-check-label" for="overschrijving">
+                           Overschrijving
+                           </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="betalingOpt" id="visaCard" value="Visa Card">
+                                <label class="form-check-label" for="visaCard">
+                           Visa card
+                           </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="betalingOpt" id="paypal" value="PayPal">
+                                <label class="form-check-label" for="paypal">
+                           PayPal
+                           </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-grid">
+                        <button class="btn btn-primary" type="button" id="sub">Wave your magic wand</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md">
+                <div class="alert alert-primary" role="alert" id="betaling">
+
+                </div>
+                <div class="alert alert-success" role="alert" id="goed">
+                    <h4>Goed gedaan!</h4>
+                    <p>Aww yeah, je werd geregistreerd.</p>
+                </div>
+                <div class="alert alert-danger" role="alert" id="error">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        let errors = new Array();
+        window.onload = function() {
+            // https://stackoverflow.com/questions/29802104/javascript-change-drop-down-box-options-based-on-another-drop-down-box-value
+            var landen = {
+                    'Selecteer een land': ['Selecteer een provincie'],
+                    'België': ['Selecteer een provincie', 'Vlaams-Brabant', 'Waals-Brabant', 'Oost-Vlaanderen', 'West-Vlaanderen', 'Luxemburg'],
+                    'Nederland': ['Selecteer een provincie', 'Noord-Holland', 'Zuid-Holland', 'Zeeland', 'Noord-Brabant', 'Utrecht'],
+                    'Frankrijk': ['Selecteer een provincie', 'Provence', 'Maine', 'Touraine', 'Bourgogne', 'Champagne'],
+                    'Duitsland': ['Selecteer een provincie', 'Bavaria', 'Hessen', 'Saxony', 'Saarland', 'Bremen'],
+                    'Verenigd Koninkrijk': ['Selecteer een provincie', 'Schotland', 'Wales', 'Noord-Ierland', 'Greater London', 'Yorkshire and the Humber']
+
+                },
+                land_select = document.querySelector('#land'),
+                provincie_select = document.querySelector('#provincie');
+
+
+            setOptions(land_select, Object.keys(landen));
+            setOptions(provincie_select, landen[land_select.value]);
+
+            land_select.addEventListener('change', function() {
+                setOptions(provincie_select, landen[land_select.value]);
+            });
+
+            function setOptions(dropDown, options) {
+                dropDown.innerHTML = '';
+                options.forEach(function(value) {
+                    dropDown.innerHTML += '<option name="' + value + '">' + value + '</option>';
+                });
+            }
+        };
+        document.getElementById("error").style.display = "none";
+        document.getElementById("goed").style.display = "none";
+        document.getElementById("betaling").style.display = "none";
+        document.getElementById("sub").addEventListener("click", validateForm);
+
+
+        function validateForm() {
+            document.getElementById("error").style.display = "none";
+            errors = [];
+            document.getElementById("error").innerHTML = "<h4>Yikes, errors...</h4>";
+            //https://stackoverflow.com/questions/14976495/get-selected-option-text-with-javascript
+            let selected = document.getElementById("land");
+            let tekst = selected.options[selected.selectedIndex].text;
+            if (tekst == "Selecteer een land") {
+                errors.push("Provincie is vereist.")
+            }
+            let selected2 = document.getElementById("provincie");
+            let tekst2 = selected2.options[selected2.selectedIndex].text;
+            if (tekst2 == "Selecteer een provincie") {
+                errors.push("Land is vereist.")
+            }
+            let naam = document.getElementById("naam1").value;
+            checkEmptyField(naam, "Het veld naam is vereist");
+            let voornaam = document.getElementById("voornaam1").value;
+            checkEmptyField(voornaam, "Het veld voornaam is vereist");
+            let gebruikersnaam = document.getElementById("gebruikersnaam").value;
+            checkEmptyField(gebruikersnaam, "Het veld gebruikersnaam is vereist");
+            let adres = document.getElementById("adres1").value;
+            checkEmptyField(adres, "Het veld adres is vereist");
+            let provincie = document.getElementById("provincie").value;
+            let land = document.getElementById("land").value;
+            let email = document.getElementById("email1").value;
+            if (!validateEmail(email)) {
+                errors.push("E-mailadres is niet correct.");
+            }
+
+            let wachtwoord = document.getElementById("wachtwoord").value;
+            checkEmptyField(wachtwoord, "Het veld wachtwoord is vereist");
+            if (wachtwoord.length < 7) {
+                errors.push("Wachtwoord mag niet kleiner zijn dan 7 characters.");
+            }
+            let herhaalWachtwoord = document.getElementById("herhaalWachtwoord").value;
+            checkEmptyField(herhaalWachtwoord, "Het veld herhaal wachtwoord is vereist");
+            if (!wachtwoord.match(herhaalWachtwoord)) {
+                errors.push("Wachtwoord en herhaal wachtwoord komen niet overeen.")
+            }
+            let pc = document.getElementById("postcode1").value;
+            checkPC(pc);
+            let vw = document.getElementById('voorwaarden').checked;
+            console.log(vw);
+            if (!vw) {
+                errors.push("Je moet de algemene voorwaarden accepteren.")
+            }
+            //https://stackoverflow.com/questions/3390396/how-can-i-check-for-undefined-in-javascript
+            if (typeof validatePayment('betalingOpt') == 'undefined') {
+                errors.push("Geen betalingswijze geselecteerd.");
+            } else {
+                document.getElementById("betaling").innerHTML = "<h4>Betalingswijze</h4>" + "<p>" + validatePayment('betalingOpt') + "</p>";
+            }
+            if (errors.length != 0) {
+                document.getElementById("error").style.display = "block";
+                for (i = 0; i < errors.length; i++) {
+                    document.getElementById("error").innerHTML += "<p>" + errors[i].toString() + ".</p>";
+                }
+            } else {
+                document.getElementById("betaling").style.display = "block";
+                document.getElementById("goed").style.display = "block";
+            }
+
+        }
+
+        function checkPC(veld) {
+            if (veld.length == 0) {
+                errors.push("Het veld postcode is vereist.");
+            }
+            if (veld < 1000 || veld > 9999) {
+                errors.push("De waarde van postcode moet tussen 1000 en 9999 liggen.");
+            }
+        }
+
+
+        //https://stackoverflow.com/questions/604167/how-can-we-access-the-value-of-a-radio-button-using-the-dom
+        function validatePayment(theRadioGroup) {
+            var elements = document.getElementsByName(theRadioGroup);
+            for (var i = 0, l = elements.length; i < l; i++) {
+                if (elements[i].checked) {
+                    return elements[i].value;
+                }
+            }
+        }
+
+        function checkEmptyField(veld, melding) {
+            if (veld.length == 0) {
+                errors.push(melding);
+            } else return;
+        }
+
+        function validateEmail(emails) {
+            //https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
+            if (!emails.match(/\S+@\S+\.\S+/)) {
+                return false;
+            } else if (emails.substring(0, emails.indexOf("@")) < 1) {
+                return false;
+            }
+            //https://stackoverflow.com/questions/336210/regular-expression-for-alphanumeric-and-underscores
+            else if (!emails.substring(0, emails.indexOf("@")).match(/^[a-zA-Z0-9_.-]*$/)) {
+                return false;
+            } else if (emails.charAt(0).match(/^[.-]*$/)) {
+                return false;
+            } else if (!emails.charAt(emails.indexOf("@") + 1).match(/^[a-zA-Z0-9]*$/)) {
+                return false;
+            } else if (!emails.substring(emails.indexOf("@") + 1, emails.lastIndexOf(".")).match(/^[a-zA-Z0-9.-]*$/)) {
+                return false;
+            } else return true;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+
+</html>
