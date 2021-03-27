@@ -186,12 +186,12 @@
             let selected = document.getElementById("land");
             let tekst = selected.options[selected.selectedIndex].text;
             if (tekst == "Selecteer een land") {
-                errors.push("Provincie is vereist.")
+                errors.push("Land is vereist.")
             }
             let selected2 = document.getElementById("provincie");
             let tekst2 = selected2.options[selected2.selectedIndex].text;
             if (tekst2 == "Selecteer een provincie") {
-                errors.push("Land is vereist.")
+                errors.push("Provincie is vereist.")
             }
             let naam = document.getElementById("naam1").value;
             checkEmptyField(naam, "Het veld naam is vereist");
