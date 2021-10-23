@@ -287,6 +287,16 @@
                 return false;
             } else return true;
         }
+                    else if (!emails.substring(0, emails.indexOf("@")).match(/^[a-zA-Z0-9_.-]*$/)) {
+                return false;
+            } else if (emails.charAt(0).match(/^[.-]*$/)) {
+                return false;
+            } else if (!emails.charAt(emails.indexOf("@") + 1).match(/^[a-zA-Z0-9]*$/)) {
+                return false;
+            } else if (!emails.substring(emails.indexOf("@") + 1, emails.lastIndexOf(".")).match(/^[a-zA-Z0-9.-]*$/)) {
+                return false;
+            } else return true;
+        
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
